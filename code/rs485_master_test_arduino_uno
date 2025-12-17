@@ -1,0 +1,41 @@
+#include <SoftwareSerial.h>
+
+#define DERE 2
+SoftwareSerial rs485(4, 3); // RO, DI
+
+void setup() {
+  Serial.begin(9600);
+  rs485.begin(9600);
+
+  pinMode(DERE, OUTPUT);
+  digitalWrite(DERE, HIGH); // TRANSMIT MODE
+
+  Serial.println("RS485 Master Started");
+}
+
+void loop() {
+  sendCmd("69,101\n");
+  delay(2000);
+
+  sendCmd("69,102\n");
+  delay(2000);
+
+  sendCmd("69,103\n");
+  delay(2000);
+
+  sendCmd("69,104\n");
+  delay(2000);
+
+  sendCmd("69,105\n");
+  delay(2000);
+}
+
+void sendCmd(String cmd) {
+  digitalWrite(DERE, HIGH); // TX ON
+  rs485.print(cmd);
+  rs485.flush();
+  digitalWrite(DERE, LOW);  // RX OFF
+
+  Serial.print("Sent: ");
+  Serial.print(cmd);
+}
