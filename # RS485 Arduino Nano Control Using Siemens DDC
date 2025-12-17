@@ -1,0 +1,31 @@
+# RS485 Arduino Nano Control Using Siemens DDC
+
+This project demonstrates RS485 communication between a Siemens DDC controller
+(master) and an Arduino Nano (slave) using MAX485 modules.
+
+## Features
+- RS485 communication (9600 baud)
+- Slave ID: 69
+- Control:
+  - LED_BUILTIN (Pin 13)
+  - LED2 (Pin 7)
+  - LED3 (Pin 9)
+  - LED4 (Pin 10)
+  - Buzzer (Pin 11)
+- Tested using Arduino UNO as DDC simulator
+
+## Hardware Used
+- Arduino Nano (Slave)
+- Arduino UNO (Master / Test)
+- MAX485 RS485 module (2 pcs)
+- LEDs + 220Ω resistors
+- Buzzer + BC548 transistor
+
+## RS485 Settings
+- Baud Rate: 9600
+- Data Bits: 8
+- Parity: None
+- Stop Bits: 1
+- Protocol: Custom ASCII
+
+## Command Format
