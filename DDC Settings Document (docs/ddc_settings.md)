@@ -1,0 +1,17 @@
+## Siemens DDC RS485 Settings
+
+- Mode: Master
+- Protocol: RS485 / ASCII
+- Baud Rate: 9600
+- Data Bits: 8
+- Parity: None
+- Stop Bits: 1
+- Slave ID: 69
+- Command Termination: CR or CR+LF
+
+### Example Commands
+69,101
+69,102
+69,103
+69,104
+69,105
