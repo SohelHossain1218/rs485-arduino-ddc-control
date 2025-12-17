@@ -1,0 +1,20 @@
+## Arduino Nano – MAX485 Connection
+
+| MAX485 | Arduino Nano |
+|------|-------------|
+| RO | D4 |
+| DI | D3 |
+| DE | D2 |
+| RE | D2 |
+| VCC | 5V |
+| GND | GND |
+
+## Output Pins
+
+| Device | Pin |
+|------|-----|
+| LED_BUILTIN | D13 |
+| LED2 | D7 |
+| LED3 | D9 |
+| LED4 | D10 |
+| Buzzer | D11 |
