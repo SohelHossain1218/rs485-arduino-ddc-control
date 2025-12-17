@@ -1,0 +1,33 @@
+🔌 RS485 Wiring (VERY IMPORTANT)
+🔹 Arduino UNO (MASTER)
+| MAX485 | Arduino UNO |
+| ------ | ----------- |
+| RO     | D4          |
+| DI     | D3          |
+| DE     | D2          |
+| RE     | D2          |
+| VCC    | 5V          |
+| GND    | GND         |
+
+🔹 Arduino Nano (SLAVE)
+| MAX485 | Arduino Nano |
+| ------ | ------------ |
+| RO     | D4           |
+| DI     | D3           |
+| DE     | D2           |
+| RE     | D2           |
+| VCC    | 5V           |
+| GND    | GND          |
+
+🔹 RS485 BUS CONNECTION
+UNO MAX485 A  --------  Nano MAX485 A
+UNO MAX485 B  --------  Nano MAX485 B
+GND -------- GND (IMPORTANT)
+
+🧪 Testing Method
+
+Open UNO Serial Monitor → You will see sent data
+
+Open Nano Serial Monitor → You will see received data
+
+LEDs & buzzer will toggle
